@@ -106,7 +106,7 @@ class _HomePageState extends State<HomePage> {
             title: Text(user.displayName ?? ''),
             subtitle: Text(user.email),
           ),
-          // const Text('Signed in successfully.'),
+          const Text('Signed in successfully.'),
           Text(_contactText),
           ElevatedButton(
             onPressed: _handleSignOut,
@@ -122,8 +122,7 @@ class _HomePageState extends State<HomePage> {
       return Column(
         mainAxisAlignment: MainAxisAlignment.spaceAround,
         children: <Widget>[
-          // const Text('You are not currently signed in.'),
-
+          const Text('You are not currently signed in.'),
           ElevatedButton(
             onPressed: _handleSignIn,
             child: const Text('SIGN IN'),
@@ -133,18 +132,6 @@ class _HomePageState extends State<HomePage> {
     }
   }
 
-//   @override
-//   Widget build(BuildContext context) {
-//     return Scaffold(
-//       appBar: AppBar(
-//         title: const Text('HomePage'),
-//         centerTitle: true,
-//       ),
-//       body: Center(
-//           child: ElevatedButton(onPressed: () {}, child: const Text("Signin"))),
-//     );
-//   }
-// }
   @override
   Widget build(BuildContext context) {
     return Scaffold(
